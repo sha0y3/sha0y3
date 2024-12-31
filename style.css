@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 50px;
+    width: 800px;
+    box-shadow: 0px 0px 20px 10px rgb(174, 0, 255);
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper div {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid purple;
+    width: 30%;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+button {
+    width: 50%;
+    height: 35px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    font-size: 18px;
+}
+
+#btn_reset {
+    background-color: red;
+}
+
+#image {
+    margin-top: 50px;
+}
+
+#result1 {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
+#result2 {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
+#result3 {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
+#result4 {
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
