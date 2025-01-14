@@ -1,42 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>数易</title>
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="app.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <h1>数易</h1>
-            <div class="wrapper">
-                <div>
-                    <p>日</p>
-                    <input type="number" id="date">
-                </div>
-                <div>
-                    <p>月</p>
-                    <input type="number" id="month">
-                </div>
-                <div>
-                    <p>年</p>
-                    <input type="number" id="year">
-                </div>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>生命信息 Life Number</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!-- social links for refinedguides.com -->
+    <!-- <script
+      src="https://refinedguides.com/assets/social.js?linkColor=%2300a1a3&textColor=%23fff"
+      defer
+    ></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>生命信息 Life Number</h1>
 
-            <button id="btn_analyse">分析</button>
+      <form class="birth_date">
+        
+        <span>
+          <label for="year">年:</label>
+          <select name="year" id="year">Year:</select>
+          <label for="month">月:</label>
+            <select name="month" id="month"></select>
+          <label for="day">日:</label>
+          <select name="day" id="day"></select>
+        </span>
 
-            <button id="btn_reset">重来</button>
-
-            <div id=result1>###</div>
-
-            <div id=result2>===</div>
-
-            <div id=result3>---</div>
-
-            <div id=result4>***</div>
-
-            <img id="image" src="C:\Users\SooK\Desktop\shuyi.jpg"><img>
-
+        <div>
+          <button type="submit">分析</button>
+          <button type="reset">重置</button>
         </div>
-    </body>
+
+      </form>
+
+      <form class="result">
+        <div id="A_S" style="display:none">
+          <h3>A to S</h3>
+          <p id="result_AtoS">-</p>
+        </div>
+
+        <div id="missing_number" style="display:none">
+          <h3>缺失号码</h3>
+          <p id="result_missing_number">-</p>
+        </div>
+
+        <div id="number_combination" style="display:none">
+          <h3>数字组合</h3>
+          <p id="result_number_combination">-</p>
+        </div>
+  
+        <div id="fiveelements" style="display:none">
+          <h3>五行</h3>
+          <p id="result_5elements">-</p>
+        </div>
+      </form>
+
+    </div>
+  </body>
 </html>
