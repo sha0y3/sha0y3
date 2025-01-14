@@ -1,87 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
 
 * {
-    font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Jost", sans-serif;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-}
-
-.container {
-    margin-top: 50px;
-    width: 800px;
-    box-shadow: 0px 0px 20px 10px rgb(174, 0, 255);
-    padding: 50px;
-    border-radius: 30px;
-    text-align: center;
-}
-
-.wrapper {
-    display: flex;
-}
-
-.wrapper div {
-    padding: 20px;
-    margin-top: 10px;
+body {
+  background: #004d4d;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1 {
-    margin-bottom: 40px;
+  text-align: center;
 }
 
-input {
-    border: none;
-    border-bottom: 1px solid purple;
-    width: 30%;
-    margin-bottom: 20px;
-    outline: none;
-    padding: 10px;
-    text-align: center;
-    font-size: 25px;
+.container {
+  margin-block: 1.5rem;
+  width: min(480px, 90%);
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  display: grid;
+  gap: 1rem; /* 1rem */
 }
 
-button {
-    width: 50%;
-    height: 35px;
-    margin-top: 25px;
-    border-radius: 20px;
-    border: none;
-    background-color: green;
-    color: #fff;
-    font-size: 18px;
+.birth_date {
+  display: flex;
+  flex-direction: column;
 }
 
-#btn_reset {
-    background-color: red;
+.birth_date > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
-#image {
-    margin-top: 50px;
+.birth_date span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-#result1 {
-    margin-top: 20px;
-    font-size: 25px;
-    text-align: left;
+.birth_date div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-#result2 {
-    margin-top: 20px;
-    font-size: 25px;
-    text-align: left;
+.birth_date label {
+  flex: 0 0 30px;
+  font-weight: 600;
+  text-align: center;
 }
 
-#result3 {
-    margin-top: 20px;
-    font-size: 25px;
-    text-align: left;
+.birth_date select {
+  width: 25%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  outline-color: #555;
+  font-size: 1rem;
+  text-align: center;
 }
 
-#result4 {
-    margin-top: 20px;
-    font-size: 25px;
-    text-align: left;
+.birth_date button {
+  width: 50%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background: #00a1a3;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  font-size: 0.875rem;
+  gap: 1rem;
 }
 
+.birth_date button[type="reset"] {
+  background: lightcoral;
+}
+
+.birth_date button:hover {
+  filter: brightness(120%);
+}
+
+.result div {
+  /* display: flex;
+  align-items: center;
+  gap: 1rem; */
+
+  margin-block: 1.5rem;
+  width: min(480px, 90%);
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+  display: grid;
+  gap: 1rem; /* 1rem */
+
+}
+
+.result [id="A_S"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1rem;
+  
+}
+
+.result [id="missing_number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.result [id="number_combination"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.result [id="fiveelements"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1rem;
+}
